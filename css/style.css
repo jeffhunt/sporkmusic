@@ -210,6 +210,23 @@ footer {
   padding: 40px;
   font-size: 1.2rem; }
 
+#content-header-area h1 {
+  font-size: 6rem;
+  margin-top: 70px;
+  padding-bottom: 70px; }
+
+#content-text-area h2 {
+  font-size: 3rem;
+  color: #4c7862;
+  margin: 40px 0px; }
+#content-text-area p {
+  line-height: 2.2rem;
+  font-size: 1.7rem;
+  margin-bottom: 30px; }
+
+div#main.prod-header {
+  background-image: url("../media/img/music-stuff.jpg"); }
+
 @media (max-width: 1065px) {
   .align-content {
     width: 100%; }
