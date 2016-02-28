@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px; }
+
+p, a {
+  font-size: 1.6rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Righteous", sans-serif; }
+
+.btn {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  margin: 10px 0 120px 0;
+  display: inline-block;
+  border-radius: 5px;
+  transition-property: background-color border;
+  transition-duration: 0.2s;
+  transition-timing-function: ease; }
+  .btn img {
+    margin-left: -10px;
+    margin-right: 10px; }
+
+.btn:hover {
+  background-color: #d16249;
+  border: 2px solid #d16249; }
+
+.content-wrap {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 25px; }
+
+.align-content {
+  width: 40%; }
+
+.align-left {
+  margin-right: auto; }
+
+.align-right {
+  margin-left: auto; }
+
+#main {
+  background-image: url("../media/img/main-image-bedroom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #main h1 {
+    color: #fff;
+    font-size: 4.3rem;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    margin-top: 120px; }
+  #main nav#desktop-nav {
+    background-color: rgba(0, 0, 0, 0.7); }
+  #main nav#desktop-nav ul {
+    list-display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #main nav#desktop-nav ul li {
+      flex-grow: 1;
+      text-align: center;
+      color: white;
+      padding: 35px; }
+      #main nav#desktop-nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 4px;
+        padding: 5px 0;
+        border-bottom: 3px solid transparent;
+        transition-property: border-bottom;
+        transition-duration: 0.2s;
+        transition-timing-function: ease; }
+      #main nav#desktop-nav ul li a:hover {
+        border-bottom: 3px solid #d16249; }
+    #main nav#desktop-nav ul li:first-child {
+      flex-grow: 3; }
+
+#main nav#mobile-nav {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #main nav#mobile-nav ul {
+    list-display: none;
+    display: flex;
+    align-items: center; }
+    #main nav#mobile-nav ul li {
+      padding: 15px; }
+    #main nav#mobile-nav ul li:first-child {
+      flex-grow: 8; }
+    #main nav#mobile-nav ul li:nth-child(2) {
+      margin-top: 10px; }
+  #main nav#mobile-nav #mobile-menu-button {
+    cursor: pointer; }
+
+#mobile-menu {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #mobile-menu ul {
+    list-display: none;
+    margin-bottom: -50px; }
+    #mobile-menu ul li {
+      text-align: center;
+      padding: 25px; }
+      #mobile-menu ul li a {
+        font-size: 1.6rem;
+        padding-bottom: 5px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 3px solid #d16249; }
+
+#mobile-menu-button {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px; }
+
+.mobile-menu-open {
+  background-image: url("../media/img/mobile-menu-open.png"); }
+
+.mobile-menu-close {
+  background-image: url("../media/img/mobile-menu-close.png"); }
+
+.img-callout h3 {
+  color: #fff;
+  font-size: 3rem;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
+.img-callout p {
+  line-height: 2rem;
+  padding-bottom: 100px;
+  color: #fff;
+  font-size: 1.7rem; }
+
+.callout-1 {
+  background-image: url("../media/img/flexing-beats-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .callout-1 h3 {
+    color: #ebda68; }
+
+.callout-2 {
+  background-image: url("../media/img/guy-with-headphones-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .callout-2 p {
+    color: #303840; }
+
+footer {
+  background-color: #303840;
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  font-size: 1.2rem; }
+
+@media (max-width: 1065px) {
+  .align-content {
+    width: 100%; }
+
+  .btn {
+    display: block;
+    margin: 10px auto 100px auto;
+    width: 50%;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.4rem;
+    background-color: rgba(209, 98, 73, 0.7);
+    font-size: 2rem;
+    border: none; }
+
+  .btn:hover {
+    border: none; }
+
+  #main {
+    height: 100%; }
+    #main h1 {
+      text-align: center; }
+    #main nav#desktop-nav {
+      display: none; }
+    #main nav#mobile-nav {
+      display: block; }
+
+  #mobile-menu ul li a:hover {
+    border-bottom-color: white; } }
+@media (max-width: 600px) {
+  .btn {
+    margin-top: 30px;
+    padding: 30px;
+    width: 80%; } }
+
+/*# sourceMappingURL=style.css.map */
